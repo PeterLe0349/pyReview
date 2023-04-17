@@ -14,7 +14,7 @@ while x < 60:
 
 right_this_minute = datetime.today().minute
 
-if right_this_minute in odds:
+if right_this_minute%2==1:
     print("This minute seems a little odd.", right_this_minute)
 else:
     print("Not an odd minute.", right_this_minute)
