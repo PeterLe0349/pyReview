@@ -1,5 +1,5 @@
 vowels = ['a','e','i','o','u']
-word = input("Provide a word to search for vowels:  ")
+word = 'Milliways'
 found = []
 for letter in word:
     if letter in vowels:
