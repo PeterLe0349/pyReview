@@ -1,0 +1,3 @@
+copper
+gold
+silver
