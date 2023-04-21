@@ -49,6 +49,10 @@ def print_stuff():
     stuff = 'ad'
     return stuff
 
+def print_stuffings():
+    print(print_stuff())
+    print(print_stuff())
+
 def side_feed(input: str):
     # print(input)
     return input

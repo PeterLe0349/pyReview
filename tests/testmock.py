@@ -57,17 +57,22 @@ class TestMock(unittest.TestCase):
     #     testfunc.read_file('list.txt')
     #     mock_read.assert_called_with('list.txt')
 
-    @patch('testfunc.print_stuff')
-    def test_effects_print(self, mock_prints):
-        mock_prints.side_effect = ['ad1', 'ad2']
-        # result = testfunc.print_stuff
-        print(testfunc.print_stuff)
-        print(testfunc.print_stuff)
-
-    # @patch("testfunc.side_feed")
+      # @patch("testfunc.side_feed")
     # def test_side_print(self, mock_side_feed):
     #     mock_side_feed.return_value = 'abc'
     #     result = testfunc.side_feed('hi')
+    #     print(result)
+
+    @patch('testfunc.print_stuff')
+    def test_effects_print(self, mock_prints):
+        mock_prints.side_effect = ['ad1', 'ad2']
+        # mock_prints.mockReturnValueOnce('ad1').mockReturnValueOnce('ad2')
+        # result = testfunc.print_stuff
+        # print(testfunc.print_stuff)
+        # print(testfunc.print_stuff)
+        testfunc.print_stuffings()
+
+  
 
 
     
