@@ -60,7 +60,7 @@ class TestMock(unittest.TestCase):
     @patch('testfunc.print_stuff')
     def test_effects_print(self, mock_prints):
         mock_prints.side_effect = ['ad1', 'ad2']
-        result = testfunc.print_stuff
+        # result = testfunc.print_stuff
         print(testfunc.print_stuff)
         print(testfunc.print_stuff)
 
